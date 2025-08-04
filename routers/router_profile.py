@@ -87,7 +87,8 @@ async def handle_generate_from_text(callback: CallbackQuery, state: FSMContext):
     await callback.message.edit_text(
         text=f"💳 Пополнить баланс 💰\n"
             "Нажмите кнопку ниже 👇",
-        reply_markup=kb.inline_kb2
+        reply_markup1=kb.inline_kb2,
+        reply_markup=kb.inline_kb2,
     )
 
 
