@@ -6,6 +6,7 @@ import routers as r
 def get_dispatcher():
     routers = [
         r.router_common,
+        r.router_profile,
     ]
 
     dp = Dispatcher()

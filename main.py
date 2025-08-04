@@ -10,7 +10,6 @@ from dotenv import load_dotenv
 
 from dispatcher import get_dispatcher
 import os
-import django
 
 load_dotenv()
 API_TOKEN = os.getenv("TG_TOKEN")
@@ -19,7 +18,6 @@ bot = Bot(token=API_TOKEN)
 
 
 async def main():
-    # logging.basicConfig(logging.DEBUG)
     dp = get_dispatcher()
     await dp.start_polling(bot)
 

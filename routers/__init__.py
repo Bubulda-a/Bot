@@ -1,1 +1,1 @@
-from . import router_common
+from . import router_common, router_profile
